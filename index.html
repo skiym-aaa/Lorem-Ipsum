@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/82af849a43.js" crossorigin="anonymous"></script>
   <title>Lorem Ipsum</title>
@@ -9,15 +10,22 @@
 <body>
   <!-- header -->
   <header>
-    <a href="#main-visual"><img class="logo" src="img/logo.png" alt="ロゴ"></a>
-    <nav>
-      <ul class="nav-list">
-        <li class="nav-list-item"><a href="#portfolio">Portfolio</a></li>
-        <li class="nav-list-item"><a href="#feature">Feature</a></li>
-        <li class="nav-list-item"><a href="#profile">Profile</a></li>
-        <li class="nav-list-item"><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+   <div class="container clearfix">
+     <a href="#main-visual"><img class="logo" src="img/logo.png" alt="ロゴ"></a>
+      <div class="menu-box">
+        <span class="list-bar"></span>
+        <span class="list-bar"></span>
+        <span class="list-bar"></span>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-list-item"><a href="#feature">Feature</a></li>
+          <li class="nav-list-item"><a href="#profile">Profile</a></li>
+          <li class="nav-list-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+   </div>
   </header>
   <!-- main -->
   <section id="main-visual">
@@ -40,15 +48,15 @@
         It is a long established fact that a reader will be distracted by the readable
         <br>
         content of a page when looking at its layout.
-        <br>
+        <br class="sp-none">
         The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
       </p>
       <div class="production-group clearfix">
-        <div class="production bg-1"></div>
+        <div class="production bg-1 sp-none"></div>
         <div class="production bg-2"></div>
-        <div class="production bg-3"></div>
+        <div class="production bg-3 sp-none"></div>
         <div class="production bg-4"></div>
-        <div class="production bg-5"></div>
+        <div class="production bg-5 sp-none"></div>
         <div class="production bg-6"></div>
       </div>
     </div>
@@ -96,7 +104,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <section id="profile">
     <div class="container">
