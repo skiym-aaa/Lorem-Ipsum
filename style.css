@@ -22,7 +22,6 @@ header {
   width: 100%;
   height: 70px;
   background-color: #EC715F;
-  text-align: right
 }
 
 .logo {
@@ -30,51 +29,55 @@ header {
   float:left;
 }
 
-nav {
+.nav {
   float: right;
 }
 
-.nav-list-item {
-  list-style: none;
+.nav-list {
   float: left;
-  font-size: 16px;
-  padding: 0 30px;
+  width: 120px;
   line-height: 70px;
+  color: #FAFAFA;
+  padding: 0 30px;
+  list-style: none;
+  font-size: 16px;
 }
 
 /*main*/
 
-/*main-visual*/
+/*mv*/
 
-#main-visual {
+#mv {
   width: 100%;
   height: 650px;
+  text-align: center;
+  color: #FAFAFA;
   background-image: url(img/mv.png);
   background-size: cover;
   background-position: center;
 }
 
-.main-visual-content {
-  color: #FAFAFA;
-  text-align: center;
+.mv-title {
   padding-top: 200px;
-}
-
-.main-visual-title {
+  font-family: 'Raleway', sans-serif;
   font-size: 64px;
 }
 
-.main-visual-text {
-  font-size: 20px;
+.mv-text {
   margin-top: 10px;
+  font-size: 20px;
 }
 
 /*共通部分*/
 
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
 .heading {
   font-size: 32px;
-  font-weight: bold;
-  color: #000000;
+  font-family: 'Raleway',sans-serif;
   text-align: center;
   padding-top: 90px;
 }
@@ -90,7 +93,6 @@ nav {
 
 .heading-text {
   font-size: 16px;
-  color: #000000;
   padding-top: 30px;
   text-align: center;
 }
@@ -165,27 +167,25 @@ nav {
   width: 320px;
   height: auto;
   text-align: center;
-  margin: 10px 10px 0 0;
+  margin-right: 10px;
 }
 
-.strength:nth-child(3n) {
+.strength:last-child {
   margin-right: 0;
 }
 
 .strength .fa {
   font-size: 60px;
-  margin-right: 20px;
 }
 
 .strength-title {
   font-size: 20px;
-  color: #000000;
-  margin: 10px 0;
+  padding: 10px 0;
 }
 
 .strength-text {
   font-size: 16px;
-  color: #000000;
+  text-align: left;
 }
 
 /*profile*/
@@ -223,13 +223,11 @@ nav {
 
 .discription-title {
   font-size: 20px;
-  color: #000000;
   margin: 20px 0 5px 0;
 }
 
 .discription-text {
   font-size: 16px;
-  color: #000000;
 }
 
 /*contact*/
@@ -243,6 +241,7 @@ nav {
 .left-contact-content {
     width: 130px;
     margin: 0 auto;
+    line-height: 1.8;
 }
 
 .link-text {
@@ -256,8 +255,8 @@ nav {
 }
 
 .right-contact-content .fab {
-  font-size: 50px;
-  margin-right: 20px;
+  font-size: 40px;
+  margin: 10px 20px 0 0;
 }
 
 .right-contact-content .fab:last-child {
@@ -286,14 +285,13 @@ footer {
     height: 50px;
   }
 
-  /*.container {*/
-    /*width: 90px;*/
-  /*}*/
+  .container {
+    width: 90%;
+  }
 
   .logo {
-    float: left;
+    float: none;
     height: 50px;
-    margin-left: 5%;
   }
   .menu-box {
     float: right;
@@ -327,15 +325,15 @@ footer {
     background-color: rgba(0,0,0,.9);
   }
 
-  #main-visual {
+  #mv {
     background-image: url(img/code.png);
   }
 
-  .main-visual-title {
+  .mv-title {
     font-size: 40px;
   }
 
-  .main-visual-text {
+  .mv-text {
     font-size: 18px;
   }
 
@@ -359,8 +357,13 @@ footer {
     width: 320px;
   }
 
+  .strength:first-child {
+    margin-top: 0px;
+  }
+
   .strength {
   float: none;
+  margin-top: 20px;
   }
 
   .profile-group {
@@ -372,9 +375,14 @@ footer {
     width: 100%;
   }
 
+  .discription-title:first-child {
+    margin-top: 20px;
+  }
+
   .right-content {
     float: none;
     width: 100%;
+    padding: 20px;
   }
 
   .contact-group {
