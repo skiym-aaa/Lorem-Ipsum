@@ -278,6 +278,16 @@ footer {
   line-height: 60px;
 }
 
+#back {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+ 
+#back img {
+  width: 50px;
+}
+
 /* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
 @media screen and (max-width:768px) {
 
